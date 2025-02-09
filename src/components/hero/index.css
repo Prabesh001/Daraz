@@ -1,0 +1,48 @@
+.hero-segment{
+  padding: 16px;
+}
+.flex-css{
+  display: flex;
+  align-items: flex-end;
+  gap: 8px;
+}
+.hero{
+  background-color: #f5f5f5;
+}
+.items-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.item-info{
+  display: flex;
+  flex-direction: column;
+}
+.load-more{
+  color: teal;
+  border: 2px solid teal;
+  padding: 6px 8px;
+  font-size: 18px;
+  width: 300px;
+  margin: 40px;
+}
+.item{
+  background-color: rgb(239, 234, 234);
+  padding: 10px;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+  height: 300px;
+  overflow: hidden;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.item img{
+  width: 100%;
+  object-fit: cover;
+  height: 60%;
+}
+.item:hover{
+  box-shadow: 0 1px 6px gray, 0 -1px 6px gray;
+}

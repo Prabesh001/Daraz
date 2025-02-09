@@ -1,0 +1,19 @@
+.nav-bar{
+  position: fixed;
+  bottom: 25px;
+  display: flex;
+  flex-direction: column;
+  background-color: #dedddd;
+  color: #575454;
+  padding: 8px 5px;
+  font-size: 19px;
+  gap: 18px;
+  z-index: 500;
+}
+.nav-bar a{
+  text-decoration: none;
+  color: #575454;
+}
+.nav-bar .active{
+  color: var(--theme-color);
+}

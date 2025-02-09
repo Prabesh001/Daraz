@@ -1,0 +1,27 @@
+.footer-box {
+  display: flex;
+  justify-content: center;
+  padding: 8px 12px;
+  background-color: #f4f4f6;
+  gap: 80px;
+}
+.flexbox {
+  display: flex;
+  flex-direction: column;
+}
+.footer-box a{
+  color: #0f136d;
+  font-size: 12px;
+  text-decoration: none;
+}
+.footer-box a:hover{
+  text-decoration: underline;
+}
+.footer-box p{
+  color: #0f136d;
+  font-size: 17px;
+}
+.image-box{
+  width: 50%;
+  overflow: hidden;
+}
