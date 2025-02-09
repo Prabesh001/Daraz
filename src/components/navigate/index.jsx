@@ -5,8 +5,9 @@ import { FaFire } from "react-icons/fa";
 import { PiGridNineFill } from "react-icons/pi";
 import { BsPersonFillDown } from "react-icons/bs";
 
-const index = () => {
-  const [showHover, setShowHover] = useState(false)
+const Index = () => {
+  const [hoveredIndex, setHoveredIndex] = useState(null);
+
   const items = [
     {
       label: "",
@@ -21,23 +22,26 @@ const index = () => {
       icon: <PiGridNineFill />,
     },
     {
-      label: "Flash Sale",
-      icon: <BsPersonFillDown/>,
-    }
+      label: "Profile",
+      icon: <BsPersonFillDown />,
+    },
   ];
+
   return (
     <div className="nav-bar">
-      {items.map((item) => (
+      {items.map((item, index) => (
         <div
-          style={{ display: "flex", alignItems: "center" }}
-          onMouseEnter={() => setShowHover(true)}
-          onMouseLeave={() => setShowHover(false)}
+          key={index}
+          style={{ display: "flex", alignItems: "center", gap: "8px", padding: "5px" }}
+          onMouseEnter={() => setHoveredIndex(index)}
+          onMouseLeave={() => setHoveredIndex(null)}
         >
-          <span><a href="#top">{item.icon}</a></span>
+          <a href="#top">{item.icon}</a>
+          {hoveredIndex === index && <div style={{fontSize:"13px", backgroundColor:"white", whiteSpace:"nowrap"}}>{item.label}</div>}
         </div>
       ))}
     </div>
   );
 };
 
-export default index;
+export default Index;

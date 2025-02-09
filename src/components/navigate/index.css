@@ -9,6 +9,7 @@
   font-size: 19px;
   gap: 18px;
   z-index: 500;
+  width: 40px;
 }
 .nav-bar a{
   text-decoration: none;
